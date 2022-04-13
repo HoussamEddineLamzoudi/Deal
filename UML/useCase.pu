@@ -1,0 +1,36 @@
+@startuml useCase
+left to right direction
+
+actor "demandeur" as fc1
+actor "fournisseure" as fc2
+
+rectangle zoneDemandeur {
+    usecase "ajouter annonce" as DUC1
+    usecase "modifierer un annonce" as DUC2
+    usecase "suprimer un annonce" as DUC3
+
+    (DUC1) ..> (s'authentifier) : include
+    (DUC2) ..> (s'authentifier) : include
+    (DUC3) ..> (s'authentifier) : include
+}
+
+rectangle zoneFournisseur {
+    usecase "ajouter annonce" as FUC1
+    usecase "modifierer un annonce" as FUC2
+    usecase "suprimer un annonce" as FUC3
+
+    (FUC1) ...> (s'authentifier) : include
+    (FUC2) ..> (s'authentifier) : include
+    (FUC3) ..> (s'authentifier) : include
+}
+
+fc1 -- DUC1
+fc1 -- DUC2
+fc1 -- DUC3
+
+fc2 -- FUC1
+fc2 -- FUC2
+fc2 -- FUC3
+
+@enduml
+
