@@ -8,7 +8,7 @@ actor "Fournisseure" as fc2
 fc0 <|--- fc1
 fc0 <|--- fc2
 
-usecase "voir les annonces/demandes" as UC1
+usecase "voir les offres/demandes" as UC1
 fc0 -left- UC1
 
 rectangle zoneDemandeur {
@@ -22,9 +22,9 @@ rectangle zoneDemandeur {
 }
 
 rectangle zoneFournisseur {
-    usecase "ajouter une annonce" as FUC1
-    usecase "modifierer ses annonces" as FUC2
-    usecase "suprimer ses annonces" as FUC3
+    usecase "ajouter une offre" as FUC1
+    usecase "modifierer ses offres" as FUC2
+    usecase "suprimer ses offres" as FUC3
 
     (FUC1) ...> (s'authentifier) : include
     (FUC2) ..> (s'authentifier) : include
