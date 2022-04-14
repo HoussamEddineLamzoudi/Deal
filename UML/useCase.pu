@@ -1,8 +1,15 @@
 @startuml useCase
 left to right direction
 
-actor "demandeur" as fc1
-actor "fournisseure" as fc2
+actor "User" as fc0
+actor "Demandeur" as fc1
+actor "Fournisseure" as fc2
+
+fc0 <|--- fc1
+fc0 <|--- fc2
+
+usecase "voir les annonces/demandes" as UC1
+fc0 -left- UC1
 
 rectangle zoneDemandeur {
     usecase "ajouter une demande" as DUC1
