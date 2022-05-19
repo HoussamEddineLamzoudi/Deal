@@ -13,9 +13,10 @@ class RegisterController extends Controller
     {
         return view('pages/register');
     }
+    
     public function register(Request $request)
     {
-        dd($request->only('userEmail', 'userPassword'));
+        // dd($request->only('userEmail', 'userPassword'));
         $this->validate($request, [
             'firstName' => 'required|max:255',
             'lastName' => 'required|max:255',

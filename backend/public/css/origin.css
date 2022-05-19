@@ -62,7 +62,7 @@ border: solid 2.5px;
 font-size: 14px;
 }
 body {
-/* background-color: #7952b34a; */
+/* background-color: #260c4b4a; */
 width: 100%;
 overflow-x: hidden;
 }
@@ -73,7 +73,7 @@ height: 100px;
 background-color: indianred;
 }
 
-._post {
+.postContainer {
 width: 50%;
 border-radius: 7px;
 -webkit-box-shadow: black 0px 1px 5px 0px;
@@ -114,4 +114,8 @@ border: solid #7952b3;
 font-size: 20px;
 text-align: center;
 }
+.postContainer{
+
+}
+
 /*# sourceMappingURL=main.css.map */

@@ -7,8 +7,8 @@
     <div class="container con_wth mt-5  p-5">
 
         <form action='{{ route('addUser')}}' method="POST">
+            @csrf
             <div class="mb-3">
-                @csrf
                 <label for="FN" class=" form-label">First Name</label>
                 <input type="text" name="firstName"  class="form-control mb-4 @error('firstName') is-invalid @enderror" id="FN" value="{{ old('firstName') }}">
                 @error('firstName')

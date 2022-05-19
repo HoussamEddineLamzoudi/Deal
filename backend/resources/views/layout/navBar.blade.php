@@ -15,20 +15,22 @@
                     <a class="nav-link" class="span_color" href="{{ route('offre') }}">Offre</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" class="span_color" href="">Demmande</a>
+                    <a class="nav-link" class="span_color" href="{{ route('demande') }}">Demmande</a>
                 </li>
             </ul>
 
             <ul class="navbar-nav  ms-auto me-3">
+                {{-- @auth <=> @if(auth()->user) --}}
                 @auth
                     <div class="d-flex justify-content-between">
                         <li class="nav-item me-5 mt-1 fw-bolder fs-5">
-                            <span class="">
+                            <span class=""> {{ auth()->user()->userName }} </span>
+                            {{-- <span class="">
                                 @userName
-                            </span>
+                            </span> --}}
                         </li>
                         <li class="nav-item">
-                            <a href="">
+                            <a href="{{ route('logout') }}">
                                 <button class="btn btn-outline-success col me-2 " type="button">logout</button>
                             </a>
                         </li>

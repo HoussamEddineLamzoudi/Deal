@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\OffreController;
+use App\Http\Controllers\DemandeController;
 
 /*
 |--------------------------------------------------------------------------
@@ -28,7 +29,16 @@ Route::post('/addUser', [RegisterController::class, 'register'])->name('addUser'
 Route::get('/login', [LoginController::class, 'index'])->name('login');
 Route::post('/auth', [LoginController::class, 'login'])->name('auth');
 
+Route::get('/logout', [LoginController::class, 'logout'])->name('logout');
+
+
 Route::get('/offre', [OffreController::class, 'index'])->name('offre');
+
+Route::get('/demande', [DemandeController::class, 'index'])->name('demande');
+
+Route::get('/popOffre', [OffreController::class, 'popAdd'])->name('popOffre');
+
+Route::post('/addOffre', [OffreController::class, 'addOffre'])->name('addOffre');
 
 
 
