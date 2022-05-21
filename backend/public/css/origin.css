@@ -114,8 +114,9 @@ border: solid #7952b3;
 font-size: 20px;
 text-align: center;
 }
-.postContainer{
-
+.menuPup {
+    margin-left: 90%;
+    border: solid 2.7px;
 }
 
-/*# sourceMappingURL=main.css.map */
+

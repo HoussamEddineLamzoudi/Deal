@@ -9,8 +9,8 @@ class OffreController extends Controller
 {
     public function index()
     {
-        $offre = anonce::paginate(4);
-        // $offre = anonce::get();
+        // $offre = anonce::paginate(6);
+        $offre = anonce::get();
 
         return view('pages/offre', [
             'offres' => $offre
@@ -55,4 +55,24 @@ class OffreController extends Controller
         // return back(); ---> redirect to the same page
         return redirect()->route('offre');
     }
+
+    public function deleteOffre(int $id)
+    {
+        // dd($anonce);
+
+        // if($anonce->delete()){
+        //     die('1');
+        // }else{
+        //     ('0');
+        // }
+
+        // dd($id);
+        // anonce::destroy($id);
+        anonce::where('annonce_id', $id)->delete();
+        return back();
+    }
+
+    // public function updatede()
+    // {
+    // }
 }

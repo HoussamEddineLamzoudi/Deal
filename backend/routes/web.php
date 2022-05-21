@@ -40,5 +40,6 @@ Route::get('/popOffre', [OffreController::class, 'popAdd'])->name('popOffre');
 
 Route::post('/addOffre', [OffreController::class, 'addOffre'])->name('addOffre');
 
+Route::get('/deleteOffre/{id}', [OffreController::class, 'deleteOffre'])->name('deleteOffre');
 
-
+// Route::post('/updatedeOffre/{offre}', [OffreController::class, 'updatedeOffre'])->name('updatedeOffre');
