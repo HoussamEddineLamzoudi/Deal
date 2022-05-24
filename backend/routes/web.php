@@ -31,10 +31,9 @@ Route::post('/auth', [LoginController::class, 'login'])->name('auth');
 
 Route::get('/logout', [LoginController::class, 'logout'])->name('logout');
 
+//offre
 
 Route::get('/offre', [OffreController::class, 'index'])->name('offre');
-
-Route::get('/demande', [DemandeController::class, 'index'])->name('demande');
 
 Route::get('/popOffre', [OffreController::class, 'popAdd'])->name('popOffre');
 
@@ -42,4 +41,17 @@ Route::post('/addOffre', [OffreController::class, 'addOffre'])->name('addOffre')
 
 Route::get('/deleteOffre/{id}', [OffreController::class, 'deleteOffre'])->name('deleteOffre');
 
-// Route::post('/updatedeOffre/{offre}', [OffreController::class, 'updatedeOffre'])->name('updatedeOffre');
+Route::get('/editeOffre/{id}', [OffreController::class, 'dataToEdite'])->name('editeOffre');
+
+Route::post('/updatedeOffre/{id}', [OffreController::class, 'update'])->name('updatedeOffre');
+
+//demande
+
+Route::get('/demande', [DemandeController::class, 'index'])->name('demande');
+
+Route::get('/popDemande', [DemandeController::class, 'popAdd'])->name('popDemande');
+
+Route::post('/addDemande', [DemandeController::class, 'addDemande'])->name('addDemande');
+
+Route::get('/deleteDemande/{id}', [DemandeController::class, 'deleteDemande'])->name('deleteDemande');
+

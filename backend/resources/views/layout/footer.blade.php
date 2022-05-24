@@ -1,8 +1,57 @@
+
+<footer>
+
+    <div class="mt-5 footer pt-5 pb-5 text-white-50 text-center text-md-start">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-lg-4">
+                    <div class="mb-5">
+                    <a class="navbar-brand ms-3 text-white fs-3" href="">Deal</a>
+                </div>
+                <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi porro voluptates sunt, odit error dolorem suscipit.</p>
+                <div class="copyright mt-5 mb-5">
+                    Created by <span class="text-white">HoussamEddine</span> &copy; 2022 - <span class="text-white">Deal</span>
+                </div>
+                </div>
+
+                <div class="col-md-6 col-lg-2">
+                    <div class="links">
+                        <h5 class="text-light">Links</h5>
+                        <ul class="list-unstyled lh-lg">
+                            <li>Home</li>
+                            <li>Offre</li>
+                            <li>Demande</li>
+                            <li>Our service</li>
+                            <li>Support</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-2">
+                    <div class="links">
+                        <h5 class="text-light">About Us</h5>
+                        <ul class="list-unstyled lh-lg">
+                            <li>Login</li>
+                            <li>Regester</li>
+                            <li>About Us</li>
+                            <li>Contact Us</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <h5 class="text-light">Contacter Nous</h5>
+                    <p class="lh-lg mt-3 mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur eveniet minus aspernatur nesciunt sunt.</p>
+                    <h5 class="text-light">Email</h5>
+                    <p class="">contact@deal.com</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</footer>
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 
-
-
-  {{-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script> --}}
 </body>
 </html>
