@@ -11,7 +11,7 @@ class OffreController extends Controller
     {
         // $offre = anonce::paginate(6);
         $offre = anonce::where('type', 'offre')->get();
-
+        // dd($offre);
         foreach($offre as $val){
             $val->file = 'img/' . $val->file;
         }

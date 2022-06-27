@@ -17,7 +17,7 @@
     <div class="container mt-5 postContainer pt-3">
         <div class="col-md-12 col-lg-12">
             @if (auth()->user()?->id == $offre->user_id)
-                <h1> {{$offre->annonce_id}} </h1>
+                {{-- <h1> {{$offre->annonce_id}} </h1> --}}
             <div class="container">
                 {{-- <a href="{{@route("deleteOffre",$offre->annonce_id)}}">
                 <button type="submit" class="btn btn-primary col-4">delete</button></a> --}}
